@@ -1,4 +1,4 @@
-![alt text](https://github.com/N0nent1ty/AutoBuildInMineCraft/master/screen_shot/1.png)
+![alt text](https://github.com/N0nent1ty/AutoBuildInMineCraft/blob/master/screen_shot/1.png)
 
 usage:
 
@@ -12,7 +12,6 @@ After you finsh the above step, move the main.py to %appdata%/.minecraft/mcpicy
 
 set 126th line of the code, to any path you want.
 im = Image.open(r"your/picture/path)")
-
 
 start minecraft and run code!
 
