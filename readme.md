@@ -7,11 +7,9 @@ it is recomment to follow the following tutorial to complete evironment settings
 
 
 # Python Requirement
-### [sklearn](http://scikit-learn.org/stable/).
-##### for kd_tree algorithm.
+### [sklearn](http://scikit-learn.org/stable/). ##### for kd_tree algorithm.
 
-### [Pillow](https://pillow.readthedocs.io/en/4.3.x/)
-##### for image procceing.
+### [Pillow](https://pillow.readthedocs.io/en/4.3.x/) ##### for image procceing.
 
 ##### Windows user:
 ``
