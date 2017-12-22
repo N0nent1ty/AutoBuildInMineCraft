@@ -15,7 +15,7 @@ it is recomment to follow the following tutorial to complete evironment settings
 
 ##### Windows user:
 ``
-You can download whl file from here to install
+You can download whl file from following link to install pillow.
 ``
 [Unofficial Windows Binaries ](https://www.lfd.uci.edu/~gohlke/pythonlibs/)
 ##### Linux & Mac user:
