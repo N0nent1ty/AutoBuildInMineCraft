@@ -1,4 +1,28 @@
+#!python3
+#main.py
+'''
+SettingUp:
+	(1)please read readme.md.
+
+
+Description:
+	Something shoud be imporve:
+		(1)I will add GUI  to let it more easy to use.
+		(2)Maybe I can add somehow machine learning procceing to let it build real 3D constucture by give it a 2D picture.
+		(3)Use GUI to let user can change option of picture esily.
+		(4)Use Classes to let the code maintainable.
+'''
+
+
+
+
+
+'''
 #不同於平方差計算 O(N)，KDTree 是 O(logN)
+
+#Differnd from computational complexity of using root_squerd,
+KD_tree is O(logN) rather than O(N).
+'''
 from sklearn.neighbors import KDTree
 from PIL import Image,ImageDraw
 import os
@@ -7,8 +31,17 @@ from mcpi.minecraft import Minecraft
 
 
 
-#二維 方塊 {(id ,color):[rgb_data]}
-array2_RGBofBlockData = (
+'''
+Datastructure :
+	name:
+		array2_RGBDataofBlock
+	Format:
+		{[int,int,int]}
+	Description:
+		(1)RGB data of evey color block.
+		(2)Use indeces as forign key, so that canget id, 
+'''
+array2_RGBDataOfBlock = (
 [209,95,220], 		#品紅羊毛	1
 [203,116,225],  	#品紅玻璃	2
 [187,129,156],		#品紅粘土	3
@@ -59,9 +92,13 @@ array2_RGBofBlockData = (
 [220,206,200]		#白粘土		48
 )
 
+'''
+Datastructure :
+	name
+{[rgb_data]}
+'''
 
-
-array1tuple_IDColorOfBlockData = [
+array1tuple_IDColorDataOfBlock = [
 (35,2), 				#品紅羊毛	1
 (95,2),  				#品紅玻璃	2
 (251,2),				#品紅粘土	3
@@ -120,11 +157,20 @@ array1tuple_IDColorOfBlockData = [
 def getMostSim(InputRGBArray):
 	indexOfNearestColor=tree.query(InputRGBArray, k=1)#k參數是指最接近的前幾個
 	scalarIndex=int(indexOfNearestColor[1][0])
-	return array1tuple_IDColorOfBlockData[scalarIndex]
+	return array1tuple_IDColorDataOfBlock[scalarIndex]
+	
+	
+	
+	
+	
+#main function	
 if __name__== "__main__" :
-	tree = KDTree(array2_RGBofBlockData,leaf_size=2)
-	im = Image.open("C:/Users/sheng/Desktop/test.jpg")
-	pix = im.load() 
+	#Create kd_tree 
+	tree = KDTree(array2_RGBDataOfBlock,leaf_size=2)
+	#Hard code like this should be modify.
+	im = Image.open("C:/Users/sheng/Desktop/tt.jpg")
+	pix = im.load()
+	#shrink the image.
 	im.thumbnail((150,150))#目標圖元
 	mc = Minecraft.create()
 	pos = mc.player.getTilePos()
@@ -138,7 +184,6 @@ if __name__== "__main__" :
 			id,color = getMostSim([im.getpixel((x,y))])
 			print(id,color)
 			mc.setBlock(pos.x+x,pos.y+(height-y),pos.z,id,color)
-
 
 	input("pause")
 
