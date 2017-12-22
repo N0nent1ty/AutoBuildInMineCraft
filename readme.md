@@ -7,11 +7,11 @@ http://www.instructables.com/id/Python-coding-for-Minecraft/
 
 
 # Python Requirement
-# [sklearn](http://scikit-learn.org/stable/).
-### for kd_tree algorithm.
+#### [sklearn](http://scikit-learn.org/stable/).
+##### for kd_tree algorithm.
 
-# [Pillow](https://pillow.readthedocs.io/en/4.3.x/)
-### for image procceing.
+#### [Pillow](https://pillow.readthedocs.io/en/4.3.x/)
+##### for image procceing.
  
 
 
