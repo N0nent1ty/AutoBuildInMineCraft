@@ -14,9 +14,10 @@ it is recomment to follow the following tutorial to complete evironment settings
 ##### for image procceing.
 
 ##### Windows user:
-``You can download whl file from here to install
-[Unofficial Windows Binaries for Python Extension Packages](https://www.lfd.uci.edu/~gohlke/pythonlibs/)
 ``
+You can download whl file from here to install
+``
+[Unofficial Windows Binaries for Python Extension Packages](https://www.lfd.uci.edu/~gohlke/pythonlibs/)
 ##### Linux & Mac user:
 ``
 pip3 install pillow 
