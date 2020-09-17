@@ -1,8 +1,8 @@
 ![alt text](https://github.com/N0nent1ty/AutoBuildInMineCraft/blob/master/screen_shot/1.png)
 
 # Getting Start:
-You have to know how to run python in minecraft first.
-it is recomment to follow the following tutorial to complete evironment settings.
+You have to know how to set up evironment for python in minecraft first.
+it is recommented to follow the tutorial(URL is list bellow) to complete evironment settings.
 ### [Python Coding for Minecraft](http://www.instructables.com/id/Python-coding-for-Minecraft/)
 
 
@@ -26,10 +26,9 @@ pip3 install pillow
 
 
 # Running test:
-After you finsh the above step, move the main.py to %appdata%/.minecraft/mcpicy 
-set 126th line of the code, to any path you want.
+Once you finsh the above step, move the file main.py to %appdata%/.minecraft/mcpicy 
+and modify the code in line number 126th, to any path content your image file.
 im = Image.open(r"your/picture/path)")
 
-
-start minecraft and run code!
+start minecraft and run the source code, the building should show up in your world!
 
