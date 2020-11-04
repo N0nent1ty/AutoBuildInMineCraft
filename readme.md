@@ -28,7 +28,7 @@ pip3 install pillow
 Once you finsh the above step, move the file main.py to %appdata%/.minecraft/mcpicy 
 and modify the code in line number 126th, to any path content your image file.
 im = Image.open(r"your/picture/path)")
---------------------
+</br>
 I know this method is terrible but I will amend this function one day when I am free,
 so that you can change the image dynamiclly.
 
