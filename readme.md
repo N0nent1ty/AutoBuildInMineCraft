@@ -31,7 +31,6 @@ im = Image.open(r"your/picture/path)")
 </br>
 I know this method is terrible but I will amend this function one day when I am free,
 so that you can change the image dynamiclly.
-
-
-start minecraft and run the source code, the building should show up in your world!
+If every thing above is setted up correctlly,
+start minecraft and run the source code, the building should show up in your world.
 
