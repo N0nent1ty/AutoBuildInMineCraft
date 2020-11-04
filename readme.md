@@ -27,8 +27,8 @@ pip3 install pillow
 # Running test:
 Once you finsh the above step, move the file main.py to %appdata%/.minecraft/mcpicy 
 and modify the code in line number 126th, to any path content your image file.
-I know this method is terrible but maybe in someday I will modified the function,
-so that you can change the image dynamiclly when I am free.
+I know this method is terrible but I will amend this function one day when I am free,
+so that you can change the image dynamiclly.
 im = Image.open(r"your/picture/path)")
 
 start minecraft and run the source code, the building should show up in your world!
